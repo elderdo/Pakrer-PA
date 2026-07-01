@@ -1,0 +1,1 @@
+document.addEventListener("alpine:init",()=>{Alpine.data("subscribeForm",()=>({email:"",loading:!1,success:!1,async subscribe(){!this.email||this.loading||(this.loading=!0,await new Promise(e=>setTimeout(e,1200)),this.loading=!1,this.success=!0)}}))});
